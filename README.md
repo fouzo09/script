@@ -12,7 +12,7 @@ npm install pm2
 ```
 
 ##Config NGINX
-```bash
+bash```
 server {
     listen 80;
     server_name domain.com;
