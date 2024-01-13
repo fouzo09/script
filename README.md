@@ -1,5 +1,4 @@
 ## Installer NGINX NodeJS & NPM
-
 ```bash
 sudo apt install nginx
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -7,6 +6,16 @@ sudo apt install -y nodejs
 ```
 
 ## Installer PM2
+
+```bash
+npm install pm2
+```
+
+## Installer les dependances
+```bash
+npm install mysql express body-parser
+```
+
 
 ```bash
 npm install pm2
