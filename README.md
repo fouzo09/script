@@ -42,5 +42,11 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255)
 );
 ```
-
+##Montage de disc
+bash```
+lsblk
+sudo file -s /dev/xvdf
+sudo mkfs -t ext4 device_name
+sudo mount device_name mount_point
+```
 
