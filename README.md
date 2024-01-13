@@ -16,7 +16,6 @@ npm install pm2
 ```
 
 ## Config NGINX
-
 ```bash
 server {
     listen 80;
@@ -43,6 +42,12 @@ CREATE TABLE IF NOT EXISTS users (
     name VARCHAR(255),
     email VARCHAR(255)
 );
+```
+
+## Test endpoints
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com"}' http://SERVER_IP/users
+curl http://SERVER_IP/users
 ```
 
 ## Montage de disc'
