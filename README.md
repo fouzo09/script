@@ -6,6 +6,15 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
+##Montage de disc'
+
+bash```
+lsblk
+sudo file -s /dev/xvdf
+sudo mkfs -t ext4 device_name
+sudo mount device_name mount_point
+```
+
 ## Installer PM2
 
 ```bash
@@ -42,11 +51,5 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255)
 );
 ```
-##Montage de disc
-bash```
-lsblk
-sudo file -s /dev/xvdf
-sudo mkfs -t ext4 device_name
-sudo mount device_name mount_point
-```
+
 
