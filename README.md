@@ -27,3 +27,22 @@ server {
     }
 }
 ```
+##SQL - Create table 
+bash```
+CREATE DATABASE IF NOT EXISTS testdb;
+USE testdb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255)
+);
+```
+
+##Montage de disc
+bash```
+lsblk
+sudo file -s /dev/xvdf
+sudo mkfs -t ext4 device_name
+sudo mount device_name mount_point
+```
