@@ -7,11 +7,13 @@ sudo apt install -y nodejs
 ```
 
 ## Installer PM2
+
 ```bash
 npm install pm2
 ```
 
 ##Config NGINX
+
 bash```
 server {
     listen 80;
@@ -27,7 +29,9 @@ server {
     }
 }
 ```
-##SQL - Create table 
+
+##SQL - Create table
+
 bash```
 CREATE DATABASE IF NOT EXISTS testdb;
 USE testdb;
@@ -39,10 +43,4 @@ CREATE TABLE IF NOT EXISTS users (
 );
 ```
 
-##Montage de disc
-bash```
-lsblk
-sudo file -s /dev/xvdf
-sudo mkfs -t ext4 device_name
-sudo mount device_name mount_point
-```
+
