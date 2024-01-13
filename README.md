@@ -6,15 +6,6 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-##Montage de disc'
-
-bash```
-lsblk
-sudo file -s /dev/xvdf
-sudo mkfs -t ext4 device_name
-sudo mount device_name mount_point
-```
-
 ## Installer PM2
 
 ```bash
@@ -23,7 +14,7 @@ npm install pm2
 
 ##Config NGINX
 
-bash```
+```bash
 server {
     listen 80;
     server_name domain.com;
@@ -41,7 +32,7 @@ server {
 
 ##SQL - Create table
 
-bash```
+```bash
 CREATE DATABASE IF NOT EXISTS testdb;
 USE testdb;
 
